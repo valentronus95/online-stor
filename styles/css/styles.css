@@ -1,9 +1,10 @@
+/* $background : #7AC751; */
 body {
-  font-family: "Poppins", sans-serif;
-  font-family: "Raleway", sans-serif;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Rubik', sans-serif;
   /* 
-  font-family: 'Mulish', sans-serif; */
+    font-family: 'Mulish', sans-serif; */
 }
 
 .wrapper {
@@ -19,31 +20,29 @@ header {
 .header {
   max-width: 100%;
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .header a {
   text-decoration: none;
   color: #FFFFFF;
   cursor: pointer;
 }
+
 .header h3 {
   font-size: 16px;
   line-height: 19px;
   font-weight: normal;
   color: #FFFFFF;
 }
+
 .header img {
   cursor: pointer;
   margin-left: 8px;
 }
+
 .header p {
   width: 2.2px;
   height: 19px;
@@ -51,6 +50,7 @@ header {
   color: #FFFFFF;
   margin-left: 20px;
 }
+
 .header b {
   font-weight: normal;
   line-height: 19px;
@@ -59,25 +59,21 @@ header {
 }
 
 .header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .nav {
   height: 92px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search {
+  display: flex;
+  border: 2px solid #7AC751;
+  border-radius: 8px;
 }
 
 .search input {
@@ -86,19 +82,26 @@ header {
   font-size: 14px;
   width: 582px;
   height: 46px;
-  border: 2px solid #7AC751;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 8px;
+  border: none;
+  border-right: 1.5px solid rgba(227, 227, 227, 0.78);
+  box-sizing: border-box;
+  border-radius: 8px 0 0 8px;
 }
+
 .search input:hover {
   background: #E5E5E5;
 }
+
+.search select {
+  border: none;
+  background: #fff;
+}
+
 .search button {
   width: 55px;
-  height: 43px;
   background: #7AC751;
-  border-radius: 0px 7px 6px 0px;
+  border: none;
+  cursor: pointer;
 }
 
 .notification a {
@@ -111,39 +114,31 @@ header {
 }
 
 .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
+
 .navbar .collections {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
   width: 260px;
   height: 67px;
   background: #7AC751;
   cursor: pointer;
 }
+
 .navbar .collections h3 {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.02em;
   color: #FFFFFF;
 }
+
 .navbar .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
+
 .navbar .menu a {
   text-decoration: none;
   font-size: 14px;
@@ -151,58 +146,72 @@ header {
 }
 
 .nav-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
   margin-bottom: 71px;
 }
+
 .nav-slider .menu-list {
   width: 260px;
   height: 454px;
   background: #F7F8FA;
 }
 
+.nav-slider .menu-list .menu-list-catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-slider .menu-list .menu-list-catalog li {
+  display: flex;
+  align-items: center;
+  height: 41px;
+  padding-left: 29px;
+  border-bottom: 0.8px solid #E3E3E3;
+}
+
+.nav-slider .menu-list .menu-list-catalog li a {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #555555;
+  text-decoration: none;
+}
+
+.nav-slider .menu-list .menu-list-catalog li:last-child {
+  border: none;
+}
+
 .support-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .support-block .support {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
+
 .support-block .support .support-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin-left: 15px;
 }
+
 .support-block .support .support-text b {
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
   color: #555555;
 }
+
 .support-block .support .support-text i {
   font-style: normal;
   font-weight: normal;
@@ -213,34 +222,20 @@ header {
 
 .modern {
   margin-top: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 120px;
 }
+
 .modern .modern-box-two {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .products-box h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 0;
   margin-bottom: 45px;
   font-family: Mulish;
@@ -250,17 +245,15 @@ header {
   line-height: 45px;
   color: #555555;
 }
+
 .products-box .trending {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 .products-box .trending a {
   font-style: normal;
   font-weight: 600;
@@ -269,24 +262,23 @@ header {
   color: #C2C2C2;
   text-decoration: none;
 }
+
 .products-box .trending a:hover {
   color: #7AC751;
 }
+
 .products-box article {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 73px;
   margin-bottom: 58px;
 }
+
 .products-box article div {
   margin: 0 0 20px;
 }
+
 .products-box article div h4 {
   margin: 0;
   margin-top: 15px;
@@ -297,6 +289,7 @@ header {
   text-transform: uppercase;
   color: rgba(117, 117, 117, 0.71);
 }
+
 .products-box article div h3 {
   margin-top: 9px;
   font-family: Rubik;
@@ -307,15 +300,13 @@ header {
   letter-spacing: 0.005em;
   color: #555555;
 }
+
 .products-box .product-price {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 0;
 }
+
 .products-box .product-price .box-price b {
   font-family: Mulish;
   font-style: normal;
@@ -327,6 +318,7 @@ header {
   color: #7AC751;
   margin-right: 7px;
 }
+
 .products-box .product-price .box-price i {
   font-family: Mulish;
   font-style: normal;
@@ -335,23 +327,20 @@ header {
   line-height: 120%;
   text-align: center;
   letter-spacing: 0.005em;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+  text-decoration-line: line-through;
   color: #CCCCCC;
 }
+
 .products-box .product-price img {
   cursor: pointer;
 }
 
 .circle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 99px;
 }
+
 .circle img {
   margin-right: 14px;
   cursor: pointer;
@@ -360,13 +349,10 @@ header {
 .box-room {
   margin-bottom: 120px;
 }
+
 .box-room h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-family: Mulish;
   font-style: normal;
   font-weight: bold;
@@ -376,25 +362,20 @@ header {
   color: #555555;
   margin: 0 0 60px;
 }
+
 .box-room .box-room-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .pagination {
   margin-bottom: 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  justify-content: flex-end;
 }
+
 .pagination .next-page {
   padding: 12px;
-  max-width: 161px;
-  max-height: 44px;
   font-family: Mulish;
   font-style: normal;
   font-weight: 600;
@@ -404,6 +385,7 @@ header {
   border-radius: 2px;
   color: #FFFFFF;
 }
+
 .pagination .page {
   font-family: Mulish;
   font-style: normal;
@@ -411,26 +393,30 @@ header {
   font-size: 18px;
   letter-spacing: 0.008em;
   color: #757575;
+  display: flex;
+  align-items: center;
 }
+
 .pagination .page b {
   font-weight: normal;
   font-size: 18px;
   letter-spacing: 0.008em;
   color: #757575;
 }
+
 .pagination .page input {
   padding: 7px;
   max-width: 58px;
   max-height: 29px;
   background: #F8FAFB;
   border: 1px solid #CCCCCC;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 2px;
   font-size: 18px;
   letter-spacing: 0.008em;
   color: #757575;
 }
+
 .pagination .page i {
   font-style: normal;
   font-weight: normal;
@@ -438,6 +424,7 @@ header {
   letter-spacing: 0.008em;
   color: #757575;
 }
+
 .pagination .page-arrow {
   max-width: 58px;
   max-height: 29px;
@@ -446,17 +433,11 @@ header {
 }
 
 .box-customer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
+
 .box-customer .customer-text {
   font-family: Mulish;
   font-style: normal;
@@ -467,21 +448,17 @@ header {
   text-transform: uppercase;
   color: #555555;
 }
+
 .box-customer .customer-bg {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   max-width: 816px;
   max-height: 312px;
   background: #F8FAFB;
-  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
 }
+
 .box-customer .customer-bg p {
   max-width: 566px;
   margin-bottom: 32px;
@@ -491,6 +468,7 @@ header {
   letter-spacing: 0.005em;
   color: #515151;
 }
+
 .box-customer .customer-bg b {
   font-family: Mulish;
   font-style: normal;
@@ -502,6 +480,7 @@ header {
   color: #555555;
   margin-bottom: 8px;
 }
+
 .box-customer .customer-bg i {
   font-family: Rubik;
   font-style: normal;
@@ -517,18 +496,17 @@ footer {
   margin-top: 115px;
   border-bottom: 1px solid #E5E5E5;
 }
+
 footer .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 51px;
 }
+
 footer .footer p {
   width: 318px;
 }
+
 footer .help h4 {
   font-weight: 500;
   font-size: 18px;
@@ -536,10 +514,12 @@ footer .help h4 {
   letter-spacing: 0.01em;
   color: #555555;
 }
+
 footer .help ul {
   padding: 0;
   list-style-type: none;
 }
+
 footer .help ul a {
   font-size: 18px;
   line-height: 40px;
@@ -547,18 +527,16 @@ footer .help ul a {
   color: #555555;
   text-decoration: none;
 }
+
 footer .footer-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
+
 footer .footer-nav img {
   max-width: 147px;
 }
+
 footer .footer-nav p {
   margin: 0;
   margin-top: 18px;
@@ -566,22 +544,18 @@ footer .footer-nav p {
   line-height: 32px;
   color: #555555;
 }
+
 footer .footer-nav .social-img img {
   margin-right: 15px;
 }
 
 .corporation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   height: 81px;
 }
+
 .corporation h4 {
   font-weight: normal;
   font-size: 14px;
@@ -590,17 +564,18 @@ footer .footer-nav .social-img img {
   padding: 0;
   margin: 0;
 }
+
 .corporation ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 .corporation ul li {
   margin-left: 53px;
 }
+
 .corporation ul li a {
   font-weight: normal;
   font-size: 14px;

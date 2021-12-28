@@ -36,17 +36,18 @@
                     <a href="#"><img src="./img/logo.svg" alt="logo"></a>
                 </div>
                 <div class="search">
-                    <form>
                         <input type="text" placeholder="Search here" list="catalog" />
-                        <datalist id="catalog">
+                        <!-- <datalist id="catalog">
                             <option value="TEST"></option>
                             <option value="TEST"></option>
                             <option value="TEST"></option>
                             <option value="TEST"></option>
                             <option value="TEST"></option>
-                        </datalist>
-                        <button type="submit"><img src="./img/zoom.svg"></button>
-                    </form>
+                        </datalist> -->
+                        <select name="" id="">
+                            <option value="">Furniture</option>
+                        </select>
+                        <button ><img src="./img/zoom.svg"></button>
                 </div>
                 <div class="notification">
                     <a href="#"><img src="./img/shop.svg" alt="shop"></a>
@@ -74,7 +75,21 @@
         </nav>
     </div> <!-- wrapper -->
     <section class="wrapper nav-slider">
-        <div class="menu-list"></div>
+        <div class="menu-list">
+            <ul class="menu-list-catalog">
+                <li><a href="#">All</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Hot Sale</a></li>
+                <li><a href="#">Furniture</a></li>
+                <li><a href="#">Amrature</a></li>
+                <li><a href="#">Tabble</a></li>
+                <li><a href="#">Chair</a></li>
+                <li><a href="#">Sofa</a></li>
+                <li><a href="#">Mirrors</a></li>
+                <li><a href="#">Stools</a></li>
+                <li><a href="#">Benches</a></li>
+            </ul>
+        </div>
         <div class="slider"><img src="./img/sofa.png" alt="auto slider"></div>
     </section>
     <section class="wrapper support-block">
@@ -441,6 +456,7 @@
         </article>
     </section>
     <section class="wrapper">
+        <div></div>
         <div class="pagination">
             <div class="next-page">
                 <b>Next page</b> 

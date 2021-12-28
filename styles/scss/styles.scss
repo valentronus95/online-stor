@@ -1,3 +1,5 @@
+// out: ../css/styles.css
+@import 'mixins.scss';
 body {
     font-family: 'Poppins', sans-serif;
     font-family: 'Raleway', sans-serif;
@@ -10,7 +12,7 @@ body {
 }
 header {
     max-width: 100%;
-    background: #7AC751;
+    background: #7AC751;;
 }
 .header {
     max-width: 100%;
@@ -58,24 +60,34 @@ header {
     justify-content: space-between;
 }
 .search {
+    display: flex;
+    border: 2px solid #7AC751;
+    border-radius: 8px;
+
     input {
         padding: 15px;
         font-family: Rubik;
         font-size: 14px;        
         width: 582px;
         height: 46px;
-        border: 2px solid #7AC751;
+        border: none;
+        border-right: 1.5px solid rgba(227, 227, 227, 0.78);
         box-sizing: border-box;
-        border-radius: 8px;
+        border-radius: 8px 0 0 8px;
         &:hover {
             background: #E5E5E5;
         }
     }
+
+    select{
+        border: none;
+        background: #fff;
+    }
     button {
         width: 55px;
-        height: 43px;
         background: #7AC751;
-        border-radius: 0px 7px 6px 0px;
+        border: none;
+        cursor: pointer;
     }
 }
 .notification {
@@ -123,6 +135,33 @@ header {
         width: 260px;
         height: 454px;
         background: #F7F8FA;
+       
+        .menu-list-catalog {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            li {   
+                display: flex;
+                align-items: center;
+                height: 41px;
+                padding-left: 29px;           
+                border-bottom: 0.8px solid #E3E3E3;
+                a {
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: 0.02em;
+                    color: #555555;
+                    text-decoration: none;
+                }
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
     }
 }
 .support-block {
@@ -288,10 +327,11 @@ header {
 .pagination {
     margin-bottom: 120px;
     display: flex;
+    justify-content: flex-end;
     .next-page {
         padding: 12px;
-        max-width: 161px;
-        max-height: 44px;
+        // max-width: 161px;
+        // max-height: 44px;
         font-family: Mulish;
         font-style: normal;
         font-weight: 600;
@@ -308,6 +348,8 @@ header {
         font-size: 18px;
         letter-spacing: 0.008em;
         color: #757575;
+        display: flex;
+        align-items: center;
         b {
             font-weight: normal;
             font-size: 18px;
