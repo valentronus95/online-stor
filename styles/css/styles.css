@@ -88,10 +88,6 @@ header {
   border-radius: 8px 0 0 8px;
 }
 
-.search input:hover {
-  background: #E5E5E5;
-}
-
 .search select {
   border: none;
   background: #fff;
@@ -182,6 +178,10 @@ header {
   letter-spacing: 0.02em;
   color: #555555;
   text-decoration: none;
+}
+
+.nav-slider .menu-list .menu-list-catalog li a:hover {
+  color: #7AC751;
 }
 
 .nav-slider .menu-list .menu-list-catalog li:last-child {
@@ -528,6 +528,10 @@ footer .help ul a {
   text-decoration: none;
 }
 
+footer .help ul a:hover {
+  color: #7AC751;
+}
+
 footer .footer-nav {
   display: flex;
   flex-direction: column;
@@ -582,4 +586,8 @@ footer .footer-nav .social-img img {
   line-height: 14px;
   color: #555555;
   text-decoration: none;
+}
+
+.corporation ul li a:hover {
+  color: #7AC751;
 }

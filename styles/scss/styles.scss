@@ -74,9 +74,6 @@ header {
         border-right: 1.5px solid rgba(227, 227, 227, 0.78);
         box-sizing: border-box;
         border-radius: 8px 0 0 8px;
-        &:hover {
-            background: #E5E5E5;
-        }
     }
 
     select{
@@ -134,8 +131,7 @@ header {
     .menu-list {
         width: 260px;
         height: 454px;
-        background: #F7F8FA;
-       
+        background: #F7F8FA;       
         .menu-list-catalog {
             display: flex;
             flex-direction: column;
@@ -156,6 +152,9 @@ header {
                     letter-spacing: 0.02em;
                     color: #555555;
                     text-decoration: none;
+                    &:hover {
+                        color: #7AC751;
+                    }
                 }
                 &:last-child {
                     border: none;
@@ -477,6 +476,9 @@ footer {
             letter-spacing: 0.01em;
             color: #555555;
             text-decoration: none;
+            &:hover {
+                color: #7AC751;
+            }
         }
     }
     .footer-nav {
@@ -523,6 +525,9 @@ footer {
                 line-height: 14px;
                 color: #555555;
                 text-decoration: none;
+                &:hover {
+                    color: #7AC751;
+                }
             }
         }
     }
