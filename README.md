@@ -1,1 +1,1 @@
-# online-stor
+# online-store
